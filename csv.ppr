@@ -1,0 +1,32 @@
+[Config]
+Compilator.SaveAll=0
+Compilator.Capture=0
+Compilator.HideOutput=0
+Compilator.LogType=0
+DefaultCPIndex=0
+LogtoEnd=1
+DontOpen=0
+AbsolutePath=0
+FileFormat=0
+ProjectFilesOnly=0
+[Project tree]
+csv
+	+JS
+		csv.js
+	+HTML
+		index.html
+[Open project files]
+0=index.html
+1=csv.js
+2=..\..\..\mongodb\log.txt
+[Selected Project Files]
+Main=
+[index.html]
+TopLine=36
+Caret=47,49
+[csv.js]
+TopLine=97
+Caret=17,25
+[..\..\..\mongodb\log.txt]
+TopLine=1
+Caret=65,24

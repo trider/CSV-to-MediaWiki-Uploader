@@ -1,0 +1,87 @@
+<!doctype html>
+
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Wiki Upload</title>
+  <script src="js/jquery.js"></script>
+  <script src="jquery.csv-0.7.js"></script>
+  <script src="csv.js"></script>
+  
+  <!-- Le styles -->
+  
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/bootstrap-responsive.css" rel="stylesheet">
+  
+  <style>
+  p { 
+      font-size: small;
+   }
+   
+	</style>
+  
+  <!-- Le fav and touch icons -->
+  <link rel="shortcut icon" href="ico/favicon.ico">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">      
+</head>
+
+<body>
+  
+  <div class="container">
+  <div class="page-header">
+      <h2>Multiple Term Uploader</h2>
+  </div>    
+    <!--<div class="hero-unit span7">-->
+      
+      <p>Use this page to upload terms from a .csv file. The file must contain the following columns, in the order below:</p>
+      <ol>
+        <li>Term</li>
+        <li>Acronym</li>
+        <li>Description</li>
+      </ol>
+      <hr/>
+      <h3>To upload terms</h3	>
+      <ol>
+      	<li>Use the <b>Choose Files</b> button to select a csv file.</li>
+      	<li>Use the Template list to apply a metadata template to each term.</li>
+	<li>Click <b>Upload</b> to upload the file's content to the Corporate Dictionary</li>
+      </ol>
+      <hr/>
+      <h4>Note</h4>
+      <p>When you upload the list, if any terms in your list already exist in the dictionary, the existing terms will be overwritten.</p>
+    <!--</div>-->
+    <hr>
+  </div>
+  <div class="container">
+    <input type=file id=files name=files[] multiple />
+    <br>
+    <textarea class="span5" rows="2" id='list'></textarea>
+    <label><b>Template</b></label>
+    <select class="span5" id="template" ></select>
+    <br>
+    <button class="btn btn-success" id="btnUpload">Upload</button>
+    <br> 
+    <label><b>Log</b></label>
+    <textarea class="span5" rows="7" id=contents></textarea>
+    <hr>
+  </div>
+   
+  <!-- Le javascript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="js/bootstrap-transition.js"></script>
+  <script src="js/bootstrap-alert.js"></script>
+  <script src="js/bootstrap-modal.js"></script>
+  <script src="js/bootstrap-dropdown.js"></script>
+  <script src="js/bootstrap-scrollspy.js"></script>
+  <script src="js/bootstrap-tab.js"></script>
+  <script src="js/bootstrap-tooltip.js"></script>
+  <script src="js/bootstrap-popover.js"></script>
+  <script src="js/bootstrap-button.js"></script>
+  <script src="js/bootstrap-collapse.js"></script>
+  <script src="js/bootstrap-carousel.js"></script>
+  <script src="js/bootstrap-typeahead.js"></script>
+  
+</body>
