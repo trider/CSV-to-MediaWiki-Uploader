@@ -1,6 +1,4 @@
 var url = 'http://localhost/wiki/api.php?action';
-//var url = 'http://ilwiki1-dev/api.php?action';
-//var url = 'http://ndpedia.nds.com//api.php?action';
 var obj;  
 
 $(document).ready(function() {
